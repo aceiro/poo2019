@@ -45,7 +45,7 @@ Antes de criar um objeto o programador deve criar uma classe que se assemelha a 
 
 **2. Executar o exemplo em C++ que define um objeto Retângulo**
 
-Agora que você compreendeu os conceitos básicos de POO tente compilar e executar o exemplo em C++ abaixo
+Agora que você compreendeu os conceitos básicos de POO tente compilar e executar o exemplo em C++ abaixo disponível no livro de referência [[1]] página 711.
 
 - [Exemplo Retângulo][3]
 
