@@ -10,7 +10,7 @@ Revisão sobre classes, objetos em C++ (C plus-plus)
 
 **PASSO 1. Metáfora de um Jogo**
 
-> Um Jogo (2D ou 3D) em geral, utiliza diferentes tipos elementos gráficos, objetos, cenários e linhas de renderização. Nesse contexto, o uso de POO é muito útil - sobretudo considerando-se o comportamento que os objetos podem exercer em um cenário real**. 
+> Um Jogo (2D ou 3D) em geral, utiliza diferentes tipos elementos gráficos, objetos, cenários e linhas de renderização. Nesse contexto, o uso de POO é muito útil - sobretudo considerando-se o comportamento que os objetos podem exercer em um cenário real 
 
 As Figuras abaixos ilustram diferentes tipos de cenários de jogos
 
@@ -32,7 +32,7 @@ As Figuras abaixos ilustram diferentes tipos de cenários de jogos
 
 
 
-**PASSO 2. Escolha de um Jogo*
+**PASSO 2. Escolha de um Jogo**
 
 - Escolha um jogo (diferente de uma outra dupla)
 - Crie ao menos dois objetos - com atributos e métodos - para esse jogo
