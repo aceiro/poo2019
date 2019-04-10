@@ -2,7 +2,7 @@
 using namespace std;
 
 //**************************************************
-// Cria uma classe com a definição do que deve     * 
+// Cria uma classe com a definição do que deve     *
 // ser um ponto                                    *
 //**************************************************
 class Ponto
