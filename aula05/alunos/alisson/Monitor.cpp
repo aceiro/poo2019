@@ -27,22 +27,22 @@ class Monitor
 
 void Monitor::setResx(double x )
 {
-   Resx = 3840 ;
+   Resx = x ;
 }
 
 void Monitor::setResy(double  y )
 {
-   Resy = 2160;
+   Resy = y;
 }
 
-void Monitor::setNpixel(double valor ) 
+void Monitor::setNpixel(double px ) 
 {
-	Npixel = 8294400;
+	Npixel = px;
 }
 
 void Monitor::setDescricao( string des ) 
 {
-	Descricao = "4K Televisão de Ultra-alta definição";
+	Descricao = des;
 }
 
 double Monitor::getResx() const
