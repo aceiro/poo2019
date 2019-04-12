@@ -15,10 +15,10 @@ private:
 public:
     void setFormato(string);
     string getFormato();
-    void setPixel();
-    double getPixel();
+    //void setPixel();
+    double Pixel(double, double);
     void setResolucaoX(Ponto);
-    double getResolucao();
+    double getResolucaoX();
     void setResolucaoY(Ponto);
     double getResolucaoY();
     void PrintMonitor();
@@ -34,17 +34,18 @@ string Monitor::getFormato()
     return formato;
 }
 
-void Monitor::setPixel ()
-{
-    pix = coordX * coordY;
-}
+// void Monitor::setPixel ()
+// {
+//     pix = coordX * coordY;
+// }
 
-double Monitor::getPixel ()
+double Monitor::Pixel (double x, double y)
 {
+    pix = x * y;
     return pix;
 }
 
-void Monitor::setResolucao(Ponto x)
+void Monitor::setResolucaoX(Ponto x)
 {
     coordX = x.getX();
 }
