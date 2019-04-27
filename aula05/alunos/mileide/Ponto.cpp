@@ -23,12 +23,12 @@ class Ponto
 
 void Ponto::setX(double coordX)
 {
-   x = 0;
+   x = coordX;
 }
 
 void Ponto::setY(double coordY)
 {
-   y = 0;
+   y = coordY;
 }
 
 

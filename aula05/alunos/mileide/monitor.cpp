@@ -23,11 +23,13 @@ crie uma outra classe para fazer o carregamento dos monitores via teclado.*/
 class Monitor
 {
    private:
-	string formato;	
-    double xPonto;
+	double xPonto;
     double yPonto;
     int pixels;
+   	string formato;		
+    
    public:
+  
    	void setFormato (string); //lê
 	string getFormato () const;	//retorna
 	void setxPonto (double);
@@ -72,16 +74,4 @@ int Monitor::getPixels() const {
     return pixels;
 }
 
-/*
-   
-   //Imprimindo 
-   int i;
-   for (i=0; i<5;i++){
-	cout << "Televisao:\n";
-	cout << "Formato: "<<modelo[i].formato <<endl;
-	cout << "Resolucao: "<<modelo[i].resolucao <<endl;
-	cout << "Proporcao: "<<modelo[i].proporcao <<endl;
-	cout << "Pixels: "<<modelo[i].pixels <<endl <<endl;
-}
-	
-*/
+
