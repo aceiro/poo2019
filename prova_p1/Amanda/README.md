@@ -17,15 +17,22 @@ return this->Cursor;
 ```
 Essa função pega o conteúdo de cursor e joga na string Cursor.
 E no código Main foi introduzida a linha para imprimir na tela qual é o cursor:
+```
 cout << "Tipo do Cursor: " << MenuA.getCursor() << endl;
+```
 
 **Q4) (1,0 ponto) Adicione para a classe MenuTemplate a possibilidade de contar a quantidade de caracteres que existem na string do cursor do menu. Para isso, crie um atributo e um método que armazene e retorne respectivamente a quantidade de caracteres existente na string do cursor. O nome da variável e método faica a critério do aluno.**
 
-Resp: Código MenuTemplate.hpp:
+Resp: 
+
+Código MenuTemplate.hpp:
+```
 void setCursorLength(const int CursorLength);
 int getCursorLength();
+```
 
 Código MenuTemplate.cpp
+```
 void MenuTemplate::setCursorLength(const int CursorLength){
 this->CursorLength = CursorLength;
 }
@@ -33,9 +40,13 @@ this->CursorLength = CursorLength;
 int MenuTemplate::getCursorLength(){
 return this->CursorLength;
 }
+```
+
 Código Main:
 Foi inserido a linha para imprimir na tela o tamanho do cursor através do comando:
+```
 cout << "Tamanho do Cursor: " << MenuA.getCursorLength() << endl;
+```
 
 
 **Q5) (3,0 ponto) Por padrão, a biblioteca MenuTemplate monta um menu de opções que exibe caracteres ASCII através da String definida em setCursor. Para melhorar a apresentação do Menu é importante poder adicionar outros tipos de caracteres. Nesse caso, sua tarefa aqui é definir um método adicional para a classe MenuTemplate de tal forma que essa classe possa suportar além de caracteres ASCII (comportamento default) o uso de caracteres Unicode UTF-8 (vide Tabela abaixo)**
