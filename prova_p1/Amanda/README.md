@@ -1,15 +1,38 @@
-# Programação Orientada a Objetos
+# Prova P1 - Amanda
 Repositório destinado à disciplina de Programação Orientada a Objetos
 
 **Programação Orientada a Objetos – Bacharelado em Sistemas de Informação**
 
-- Abstração
-- High-level
-- Classes
-- Tipos particulares
-- .. ..
+Q1 ) (1,0 ponto) Adicionar para o menu principal as seguintes opções: Video Options; Sound Options; Controls. 
+No código Main.cpp dentro de int main() foi adicionado mais 3 Opções através do comando: MenuA.addEntry(“”,””).
+Q2) (1,0 ponto) Modificar a descrição do Menu do game para “Neverwinter Nights Simple Menu” 
+No código Main.cpp dentro de int main() foi modificado o conteúdo do menu: MenuA.Title = "\t\tNeverwinter Nights Simple Menu";
+Q3) (1,0 ponto) A classe MenuTemplate possui inúmeros métodos (ver arquivo MenuTemplate.hpp). Contudo, nem todos os métodos foram implementados. Um deles é o método getCursor() que retorna a string associada com o cursor definido inicialmente. Sua atividade aqui nessa questão é implementar essa rotina getCursor para retornar e então exibi-la no programa main.cpp.
+No código MenuTemplate.cpp, ao final do código foi implementado a chamada da função GetCursor:
+string MenuTemplate::getCursor(){
+return this->Cursor;
+}
+Essa função pega o conteúdo de cursor e joga na string Cursor.
+E no código Main foi introduzida a linha para imprimir na tela qual é o cursor:
+cout << "Tipo do Cursor: " << MenuA.getCursor() << endl;
+Q4) (1,0 ponto) Adicione para a classe MenuTemplate a possibilidade de contar a quantidade de caracteres que existem na string do cursor do menu. Para isso, crie um atributo e um método que armazene e retorne respectivamente a quantidade de caracteres existente na string do cursor. O nome da variável e método faica a critério do aluno. 
+Código MenuTemplate.hpp:
+void setCursorLength(const int CursorLength);
+int getCursorLength();
+
+Código MenuTemplate.cpp
+void MenuTemplate::setCursorLength(const int CursorLength){
+this->CursorLength = CursorLength;
+}
+
+int MenuTemplate::getCursorLength(){
+return this->CursorLength;
+}
+Código Main:
+Foi inserido a linha para imprimir na tela o tamanho do cursor através do comando:
+cout << "Tamanho do Cursor: " << MenuA.getCursorLength() << endl;
 
 
-Muitos conceitos esão relacionados com linguagens de programação. Veja o vídeo abaixo
-- https://www.youtube.com/watch?v=pTB0EiLXUC8
-- https://bigthink.com/videos/why-i-created-c
+Q5) (3,0 ponto) Por padrão, a biblioteca MenuTemplate monta um menu de opções que exibe caracteres ASCII através da String definida em setCursor. Para melhorar a apresentação do Menu é importante poder adicionar outros tipos de caracteres. Nesse caso, sua tarefa aqui é definir um método adicional para a classe MenuTemplate de tal forma que essa classe possa suportar além de caracteres ASCII (comportamento default) o uso de caracteres Unicode UTF-8 (vide Tabela abaixo)
+Q6 ) (3,0 ponto) A implementação atual do MenuTemplate considera a inserção de um novo elemento sempre no final do vetor (vide método – MenuTemplate ::addEntry). Em PCs com pouca capacidade de processamento isso pode ser um problema uma vez que pode leva a um uso excessivo da memória para além do limite permitido. Para resolver esse problema, uma alternativa é o uso de uma estrutura de dados do Tipo Vetor Circular – i.e., um novo elemento é sempre adicionado na cabeça do vetor considerando-se que a cabeça do vetor sempre será o item menos usado. Assim, para essa questão modifique a implementação do método addEntry para que esse método passe a user um vetor circular.
+
