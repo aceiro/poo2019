@@ -70,8 +70,9 @@ void MenuTemplate::setCursor(const string &Cursor, const bool isUnicode) {
 ...
 ```
 
-Dentro do código main.cpp foi alterado o valor da variável heart para "\xe2\x99\xa5 ". A chamada da função setCursor que passa a variável heart foi adicionada a variável booleana que funciona como uma flag que determina se é ou não Unicode.
+Dentro do código main.cpp foi alterado o valor da variável heart para "\xe2\x99\xa5 ". A chamada da função setCursor que passa a variável heart foi adicionada a variável booleana que funciona como uma flag que determina se é ou não Unicode. No caso para exibir em Unicode a variavel deve ser true.
 ```
+const string heart = "\xe2\x99\xa5 ";
 MenuA.setCursor(heart, true);
 ```
 
