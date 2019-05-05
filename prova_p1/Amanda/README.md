@@ -8,10 +8,13 @@ Resp: No código Main.cpp dentro de int main() foi adicionado mais 3 Opções at
 Resp: No código Main.cpp dentro de int main() foi modificado o conteúdo do menu: MenuA.Title = "\t\tNeverwinter Nights Simple Menu";
 
 **Q3) (1,0 ponto) A classe MenuTemplate possui inúmeros métodos (ver arquivo MenuTemplate.hpp). Contudo, nem todos os métodos foram implementados. Um deles é o método getCursor() que retorna a string associada com o cursor definido inicialmente. Sua atividade aqui nessa questão é implementar essa rotina getCursor para retornar e então exibi-la no programa main.cpp.**
+
 Resp: No código MenuTemplate.cpp, ao final do código foi implementado a chamada da função GetCursor:
+```
 string MenuTemplate::getCursor(){
 return this->Cursor;
 }
+```
 Essa função pega o conteúdo de cursor e joga na string Cursor.
 E no código Main foi introduzida a linha para imprimir na tela qual é o cursor:
 cout << "Tipo do Cursor: " << MenuA.getCursor() << endl;
