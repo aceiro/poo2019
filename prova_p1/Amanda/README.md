@@ -58,6 +58,8 @@ const bool isUnicode) onde Cursor é uma string em Unicode e isUnicode é uma fl
 exibição em unicode. Use a variável booleana isUnicode para controlar ou não a exibição em ASCII ou
 UNICODE. Para carregar o código UNICODE em string C++ use o exemplo abaixo**
 
+Resp:
+
 No código MenuTemplate.cpp foi alterado a função setCursor para receber a string do cursor e o valor booleano que verifica a condição se é ou não Unicode.
 Dentro da função foi adicionado a verificação com o “if else”. Se o valor for true é exibido o cursor em Unicode se não é exibido o “>”.
 ```
