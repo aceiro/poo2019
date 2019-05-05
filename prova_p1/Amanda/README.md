@@ -49,7 +49,37 @@ cout << "Tamanho do Cursor: " << MenuA.getCursorLength() << endl;
 ```
 
 
-**Q5) (3,0 ponto) Por padrão, a biblioteca MenuTemplate monta um menu de opções que exibe caracteres ASCII através da String definida em setCursor. Para melhorar a apresentação do Menu é importante poder adicionar outros tipos de caracteres. Nesse caso, sua tarefa aqui é definir um método adicional para a classe MenuTemplate de tal forma que essa classe possa suportar além de caracteres ASCII (comportamento default) o uso de caracteres Unicode UTF-8 (vide Tabela abaixo)**
+**Q5) (3,0 ponto) Por padrão, a biblioteca MenuTemplate monta um menu de opções que exibe caracteres ASCII através da String definida em setCursor. Para melhorar a apresentação do Menu é importante poder adicionar outros tipos de caracteres. Nesse caso, sua tarefa aqui é definir um método adicional para a classe MenuTemplate de tal forma que essa classe possa suportar além de caracteres ASCII (comportamento default) o uso de caracteres Unicode UTF-8 (vide Tabela abaixo).**
+
+**Assim, pede-se que seja criado um novo método MenuTemplate::setCursor(const string &Cursor,
+const bool isUnicode) onde Cursor é uma string em Unicode e isUnicode é uma flag para controlar a
+exibição em unicode. Use a variável booleana isUnicode para controlar ou não a exibição em ASCII ou
+UNICODE. Para carregar o código UNICODE em string C++ use o exemplo abaixo**
+
+No código MenuTemplate.cpp foi alterado a função setCursor para receber a string do cursor e o valor booleano que verifica a condição se é ou não Unicode.
+Dentro da função foi adicionado a verificação com o “if else”. Se o valor for true é exibido o cursor em Unicode se não é exibido o “>”.
+```
+void MenuTemplate::setCursor(const string &Cursor, const bool isUnicode) {
+...
+		if (isUnicode) {
+			this->Cursor = Cursor;
+		} else {
+			this->Cursor = “>”;
+		}
+    }
+...
+```
+
+Dentro do código main.cpp foi alterado o valor da variável heart para "\xe2\x99\xa5 ". A chamada da função setCursor que passa a variável heart foi adicionada a variável booleana que funciona como uma flag que determina se é ou não Unicode.
+```
+MenuA.setCursor(heart, true);
+```
+
+E no MenuTemplate.hpp foi alterada apenas a chamada da função para incluir a variável booleana:
+```
+void setCursor(const string &Cursor, const bool isUnicode);
+```
+
 
 **Q6 ) (3,0 ponto) A implementação atual do MenuTemplate considera a inserção de um novo elemento sempre no final do vetor (vide método – MenuTemplate ::addEntry). Em PCs com pouca capacidade de processamento isso pode ser um problema uma vez que pode leva a um uso excessivo da memória para além do limite permitido. Para resolver esse problema, uma alternativa é o uso de uma estrutura de dados do Tipo Vetor Circular – i.e., um novo elemento é sempre adicionado na cabeça do vetor considerando-se que a cabeça do vetor sempre será o item menos usado. Assim, para essa questão modifique a implementação do método addEntry para que esse método passe a user um vetor circular.**
 
