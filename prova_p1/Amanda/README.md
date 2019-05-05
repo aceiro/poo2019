@@ -2,9 +2,11 @@
 Repositório destinado para as respostas da Prova P1 da matéria de Programação Orientada a Objetos
 
 **Q1 ) (1,0 ponto) Adicionar para o menu principal as seguintes opções: Video Options; Sound Options; Controls.**
+
 Resp: No código Main.cpp dentro de int main() foi adicionado mais 3 Opções através do comando: MenuA.addEntry(“”,””).
 
 **Q2) (1,0 ponto) Modificar a descrição do Menu do game para “Neverwinter Nights Simple Menu”** 
+
 Resp: No código Main.cpp dentro de int main() foi modificado o conteúdo do menu: MenuA.Title = "\t\tNeverwinter Nights Simple Menu";
 
 **Q3) (1,0 ponto) A classe MenuTemplate possui inúmeros métodos (ver arquivo MenuTemplate.hpp). Contudo, nem todos os métodos foram implementados. Um deles é o método getCursor() que retorna a string associada com o cursor definido inicialmente. Sua atividade aqui nessa questão é implementar essa rotina getCursor para retornar e então exibi-la no programa main.cpp.**
