@@ -1,5 +1,7 @@
 # Prova P1 - Amanda
-Repositório destinado para as respostas da Prova P1 da matéria de Programação Orientada a Objetos
+Repositório destinado para as respostas da Prova P1 da matéria de Programação Orientada a Objetos.
+
+Link do repositório: https://github.com/manddynhaa/MenuTemplate
 
 **Q1 ) (1,0 ponto) Adicionar para o menu principal as seguintes opções: Video Options; Sound Options; Controls.**
 
