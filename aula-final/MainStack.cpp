@@ -1,6 +1,25 @@
 #include<iostream>
 using namespace std;
 
+//
+//
+// Uso de Herânca
+// 
+class StackRuntimeException: exception{
+	private:
+		string message;
+	public:
+		StackRuntimeException(string message);
+		void printMessage();
+};
+
+StackRuntimeException::StackRuntimeException(string message){
+	this->message = message;
+}
+void StackRuntimeException:: printMessage(){
+	cout << message << endl;
+}
+
 class Stack{
 	private:
 		const int LIMIT = 16;
@@ -36,15 +55,16 @@ Stack::~Stack(){
 void Stack::push(int value){
 	if( !isFull() )
 		mem[++top] = value;
-		else 
-			throw string("Stack is full!");
+		else {
+			throw StackRuntimeException("Stack is full!");
+		}
 }
 
 int Stack::pop(){
 	if( !empty() )
 		return mem[top];
 		else {
-			throw Exception("Stack is empty!");
+			throw StackRuntimeException("Stack is empty!");
 		}
 }
 
@@ -54,7 +74,7 @@ int Stack::remove(){
 		int aux  = mem[top--];
 		return aux;
 		}else {
-			throw Exception("Stack is empty!");
+			throw StackRuntimeException("Stack is empty!");
 		}
 }
 
@@ -90,9 +110,16 @@ int main(int argc, char *argv[]){
 	int n = atoi(argv[1]);
 	int r = -1;
 	do{
-		r = n % 2;		
-		n = n / 2;
-		stack->push( r );
+		try{
+			r = n % 2;		
+			n = n / 2;
+			stack->push( r );
+		}
+		catch(StackRuntimeException e){
+			e.printMessage();
+			cout << "Stack is limited, computation is imprecise! " << endl;
+			break;
+		}
 	}while( n!=0 );
 
 	while ( !stack->empty() ){
