@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-Stack *stack = new Stack(10);
+Stack *stack = new Stack(100);
 
 void DecToBin::setBinary(int dec) {
   if (dec < BINARY) {
