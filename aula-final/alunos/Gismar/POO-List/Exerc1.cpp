@@ -124,5 +124,7 @@ int main() {
   cout << pessoa->getCPFPessoa() << ", RG ";
   cout << pessoa->getRGPessoa() << endl << endl;
 
+  delete pessoa;
+
   return 0;
 }
