@@ -93,5 +93,7 @@ int main() {
   cout << vendedor->getNomeFuncionario() << "\tComissao: " << (vendedor->getComissaovenda() * 100) << "%";
   cout << endl << endl;
 
+  delete vendedor;
+  
   return 0;
 }
