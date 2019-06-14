@@ -276,4 +276,6 @@ Abaixo um exemplo de um tipo de programa hello world que usa a biblioteca STL: u
 
 **Q10 ) Faça um resumo sobre os principais conceitos aprendidos durante o semestre.**
 
+Neste semestre, utilizando a linguagem C++, foi apresentado os principais conceitos de Programação Orientada a Objetos, assim vimos os conceitos e aplicações de classes e objetos, herança, métodos de encapsulamento, sobrecarga, sobrescrita e polimorfismo. Também nos aprofundamos no estudo da biblioteca STL.
+
 
