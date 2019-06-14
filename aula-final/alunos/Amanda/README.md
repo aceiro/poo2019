@@ -201,3 +201,81 @@ void f(){
 void f(char){
 ```
 A sobrecarga é qualquer coisa que tenha um parâmetro tem o mesmo nome mas um tem paramento e outro não...isso é sobrecarga.
+
+**Q7 ) Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo método sobrescrito f()
+Class A { public: void f(); };**
+
+```
+class A{
+	private:
+	public:
+		void f();
+};
+	
+class B:A{
+	private:
+	public:
+		void f();
+};
+	
+```
+
+**Q8 ) Crie duas classes em C++ (como a apresentada abaixo)
+Qual f() será chamado? Como se chama essa mecanismo em C++?**
+```
+class A{ public: void f();};
+	class B:{public: void f(); };
+	class C { public: void f(); };
+	void C::f () { B *i = new A(); };
+
+class A{
+	public:
+		void f();
+};
+	
+
+class B: A{
+	public:
+		void f();
+};
+	
+
+class C{
+	public:
+		void f();
+};
+	
+void C::f(){
+	B *i = new A();
+}
+	
+```
+RESPOSTA:  O f() chamado será o da classe C, chama-se sobrescrito.
+
+**Q9 ) Comente o funcionamento do STL - Standard Template Library. Dê um exemplo de uso.**
+
+É um conjunto de classes de modelo C ++ para fornecer estruturas e funções de dados de programação comuns, como listas, pilhas, matrizes, etc. É uma biblioteca de classes, algoritmos e iteradores de contêineres. É uma biblioteca generalizada e, portanto, seus componentes são parametrizados. Um conhecimento prático de classes de modelo é um pré-requisito para trabalhar com o STL.
+STL tem quatro componentes:
+* Algoritmos: O algoritmo de cabeçalho define uma coleção de funções especialmente projetadas para serem usadas em intervalos de elementos. Eles atuam em contêineres e fornecem meios para várias operações para o conteúdo dos contêineres.
+* Contêineres ou classes de contêiner armazenam objetos e dados. Há no total sete classes de contêineres de “primeira classe” padrão e três classes de adaptadores de contêiner e apenas sete arquivos de cabeçalho que fornecem acesso a esses contêineres ou adaptadores de contêiner.
+* Funções: O STL inclui classes que sobrecarregam o operador de chamada de função. Instâncias de tais classes são chamadas de objetos de função ou functores. Os funcionais permitem que o funcionamento da função associada seja personalizado com a ajuda de parâmetros a serem passados.
+* Iteradores: Como o nome sugere, os iteradores são usados para trabalhar em uma sequência de valores. Eles são o principal recurso que permite generalidade no STL.
+
+Abaixo um exemplo de um tipo de programa hello world que usa a biblioteca STL: uma implementação comum de uma abstração de classe de string chamada string.
+
+```
+#include <stdio.h> 
+   void main(){ 
+   	// create string ‘str’ = “Hello World!”
+   	char *str = “Hello World!”;
+
+   	printf(“%s\n”, str);
+};
+```
+
+
+**Q10 ) Faça um resumo sobre os principais conceitos aprendidos durante o semestre.**
+
+Neste semestre, utilizando a linguagem C++, foi apresentado os principais conceitos de Programação Orientada a Objetos, assim vimos os conceitos e aplicações de classes e objetos, herança, métodos de encapsulamento, sobrecarga, sobrescrita e polimorfismo. Também nos aprofundamos no estudo da biblioteca STL.
+
+

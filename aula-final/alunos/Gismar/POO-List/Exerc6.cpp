@@ -14,15 +14,16 @@ class B : public A {
   public:
     B();
     ~B();
+    void f();
 };
 
 void A::f() {
-
+  cout << endl << "...passei por aqui!!!" << endl;
 }
 
 B::B() {
   cout << endl << "usando método f, sem sobrecarga" << endl;
-  void f();
+  void f(float);
 
   cout << endl << "usando método f, com sobrecarga" << endl;
   void f(int);
