@@ -1,6 +1,6 @@
 # P2 -POO/2019
 ## ALISSON - 8100213
-**Q1 )**  Crie uma classe em C++ que para representar um objeto Pessoa com os seguintes atributos ñ nome, idade, sexo, CPF, RG.
+**Q1 )**  Crie uma classe em C++ que para representar um objeto Pessoa com os seguintes atributos ‚Äì nome, idade, sexo, CPF, RG.
 
     class Pessoa{
     		private:
@@ -13,7 +13,7 @@
     			Pessoa();
     			~Pessoa();
     	};
-**Q2 )** Crie uma classe em C++ para representar uma Calculadora AritmÈtica com as seguintes operaÁıes ñ soma, subtraÁ„o, multiplicaÁ„o e divis„o.
+**Q2 )** Crie uma classe em C++ para representar uma Calculadora Aritm√©tica com as seguintes opera√ß√µes ‚Äì soma, subtra√ß√£o, multiplica√ß√£o e divis√£o.
 
 
     class Calculadora{
@@ -44,10 +44,10 @@
     	this->value= a/b;
     	cout<< "Resultado: " << value; 
     }
-**Q3)** Explique o conceito de construtores e destrutores em C++ com um exemplo. Nesse caso, use um exemplo diferente dos exercÌcios 1 e 2.
+**Q3)** Explique o conceito de construtores e destrutores em C++ com um exemplo. Nesse caso, use um exemplo diferente dos exerc√≠cios 1 e 2.
 
 **Construtor** em poo um tipo de rotina que executada 
-durante a criÁ„o de um objeto* ou de, via a instanciÁ„o.'
+durante a cri√ß√£o de um objeto* ou de, via a instanci√ß√£o.'
 
 ```cpp
 class A {
@@ -62,8 +62,8 @@ A::A(){
 
 };
 ```
-O **Destrutor** por outro lado, È uma rotina executada durante a finalizaÁ„o 
-do programa em memÛria.
+O **Destrutor** por outro lado, √© uma rotina executada durante a finaliza√ß√£o 
+do programa em mem√≥ria.
 ```cpp
 class no{
 	No
@@ -73,7 +73,7 @@ class no{
 
 	}:
 
-	No::No (){ //CriaÁ„o de novos NO e por sim apontamento para null
+	No::No (){ //Cria√ß√£o de novos NO e por sim apontamento para null
 		ref = new No();
 		ref->ref= new No();
 		fer->fer->ref = new No();
@@ -82,20 +82,20 @@ class no{
 	};
 
 	No::~No(){
-		ref = null; // aqui faz a limpeza em memÛria
+		ref = null; // aqui faz a limpeza em mem√≥ria
 		//ou:editormd-logo-1x:
 		delete ref;
 	};
 
 ```
-**Q4)** Considerando a import‚ncia de ProgramaÁ„o Orientada a Objetos nos dias atuais, comente as principais caracterÌsticas desse paradigma de desenvolvimento de software. Em particular, procure destacar suas diferentes. Como sugest„o, tente completar as lacunas a seguir:
-> ProgramaÁ„o orientada a objetos (POO) È um PARADIGMA que visa fornecer o ENCAPSULAMENTO para que classes e MEMBROS possam ser selecionados por meio da instanciaÁ„o de classes quando o escopo for PUBLIC.
+**Q4)** Considerando a import√¢ncia de Programa√ß√£o Orientada a Objetos nos dias atuais, comente as principais caracter√≠sticas desse paradigma de desenvolvimento de software. Em particular, procure destacar suas diferentes. Como sugest√£o, tente completar as lacunas a seguir:
+> Programa√ß√£o orientada a objetos (POO) √© um PARADIGMA que visa fornecer o ENCAPSULAMENTO para que classes e MEMBROS possam ser selecionados por meio da instancia√ß√£o de classes quando o escopo for PUBLIC.
 
  >Paradgma: um modelo.
-  Encapsulamento: CriaÁ„o da classe e protegendo com o privat.
-  Membro : funÁoes e atributos.
+  Encapsulamento: Cria√ß√£o da classe e protegendo com o privat.
+  Membro : fun√ßoes e atributos.
 
-**Q5 )** Crie uma classe Pai e uma classe Filha e faÁa a sua representaÁ„o em heranÁa usando um diagrama e o respectivo cÛdigo em C++.
+**Q5 )** Crie uma classe Pai e uma classe Filha e fa√ßa a sua representa√ß√£o em heran√ßa usando um diagrama e o respectivo c√≥digo em C++.
 
 
     class Pai{
@@ -115,18 +115,18 @@ class no{
     		void correr();
     	
     };
-    // heran√ßa multipla:
+    // heran√É¬ßa multipla:
     
     class A, B, C {
     
     }
     
 
-**Q6 e Q7 )** Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo mÈtodo sobrecarregado f(); e um mÈtodo sobrescrito f();. Class A { public: void f(); };
+**Q6 e Q7 )** Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo m√©todo sobrecarregado f(); e um m√©todo sobrescrito f();. Class A { public: void f(); };
 
-A **sobrescrita** de mÈtodos seria criar um novo mÈtodo na classe filha contendo
-a mesma assinatura e mesmo tipo de retorno do mÈtodos sobrescrito. (Override).
-Ja o **sobrecarga**, ele no caso seria, o que permite mÈtodos de mesmo nome, mas com suas assinaturas diferentes, ex argumentos diferentes.
+A **sobrescrita** de m√©todos seria criar um novo m√©todo na classe filha contendo
+a mesma assinatura e mesmo tipo de retorno do m√©todos sobrescrito. (Override).
+Ja o **sobrecarga**, ele no caso seria, o que permite m√©todos de mesmo nome, mas com suas assinaturas diferentes, ex argumentos diferentes.
 
 **Sobrecarga:**
 
@@ -165,7 +165,7 @@ Ja o **sobrecarga**, ele no caso seria, o que permite mÈtodos de mesmo nome, mas
 		void f(string);
 		}
 		};
-**Q5)** Crie duas classes em C++ (como apresentado abaixo)
+**Q8)** Crie duas classes em C++ (como apresentado abaixo)
 class A{ public: void f();};
 class B:{public: void f(); };
 class C { public: void f(); };
@@ -195,13 +195,13 @@ void C::f () { B *i = new A(); };
     {
     B *i = new A();
     }
-    // Mostra um possivÈl erro de B em A.
+    // Mostra um possiv√©l erro de B em A.
 	
 	
 **Q9)** Comente o funcionamento do STL - Standard Template Library. De um exemplo de uso.
 
-** STL**  … uma biblioteca quase que totalmente baseada em templates, buscando simplicidade, produtividade e rapidez. Ela possui alguns estilos b·sicos, chamado concepts.
-S„o eles: Containers, Iterators e Algoritmos.
+** STL**  √â uma biblioteca quase que totalmente baseada em templates, buscando simplicidade, produtividade e rapidez. Ela possui alguns estilos b√°sicos, chamado concepts.
+S√£o eles: Containers, Iterators e Algoritmos.
 
 Exemplo iterators:
 
@@ -214,14 +214,14 @@ Exemplo iterators:
     
        std::vector<int> v;
        // 
-       // Esse È o tipo do iterator para um vetor de int. 
-       // Todos os containers da STL seguem esse padr„o, o tipo do iterator
-       // È definido por um typedef dentro do prÛprio container
+       // Esse √© o tipo do iterator para um vetor de int. 
+       // Todos os containers da STL seguem esse padr√£o, o tipo do iterator
+       // √© definido por um typedef dentro do pr√≥prio container
        //
        std::vector<int>::iterator i;
     
        //
-       // container vazio, begin() È igual a end()
+       // container vazio, begin() √© igual a end()
        //
        assert(v.begin() == v.end());
     
@@ -233,23 +233,23 @@ Exemplo iterators:
     
        assert(v.begin() != v.end());
     
-       // o primeiro item È igual a 10
+       // o primeiro item √© igual a 10
        assert(v[0] == 10);
     
-       // o begin() aponta para o item de Ìndice 0
+       // o begin() aponta para o item de √≠ndice 0
        assert(v[0] == *v.begin());
     
        // posso somar iterator como somo ponteiros.
        // begin() + 1 aponta para o segundo item.
        assert(*(v.begin() + 1) == 20);
     
-       // temos somente dois itens. O item depois do ˙ltimo È o end()
+       // temos somente dois itens. O item depois do √∫ltimo √© o end()
        assert(v.begin() + 2 == v.end());
     
        return 0;
     }
 
-**Q)10** FaÁa um resumo sobre os principais conceitos aprendidos durante o semestre.
+**Q)10** Fa√ßa um resumo sobre os principais conceitos aprendidos durante o semestre.
 
 Ao longo deste semestre vimos os principais conceitos de POO, estudamos sobre classes e objetos , conhecemos os principais mecanismo como sobrecarga e sobrescrita.
-TambÈm vimos os trÈs pilares da POO, encapsulamento, heranÁa e Polimorfismo, n„o podendo esquecer da biblioteca STL que possui varios beneficios para o desenvolvedor.
+Tamb√©m vimos os tr√©s pilares da POO, encapsulamento, heran√ßa e Polimorfismo, n√£o podendo esquecer da biblioteca STL que possui varios beneficios para o desenvolvedor.
