@@ -21,7 +21,7 @@ public:
     string getNome();
 };
 
-class PokemonType : Pokemon{
+class PokemonType : public Pokemon{
 private:
     string type[];
     string noEffectAgainst[];
