@@ -256,10 +256,10 @@ RESPOSTA:  O f() chamado será o da classe C, chama-se sobrescrito.
 
 É um conjunto de classes de modelo C ++ para fornecer estruturas e funções de dados de programação comuns, como listas, pilhas, matrizes, etc. É uma biblioteca de classes, algoritmos e iteradores de contêineres. É uma biblioteca generalizada e, portanto, seus componentes são parametrizados. Um conhecimento prático de classes de modelo é um pré-requisito para trabalhar com o STL.
 STL tem quatro componentes:
-• Algoritmos: O algoritmo de cabeçalho define uma coleção de funções especialmente projetadas para serem usadas em intervalos de elementos. Eles atuam em contêineres e fornecem meios para várias operações para o conteúdo dos contêineres.
-• Contêineres ou classes de contêiner armazenam objetos e dados. Há no total sete classes de contêineres de “primeira classe” padrão e três classes de adaptadores de contêiner e apenas sete arquivos de cabeçalho que fornecem acesso a esses contêineres ou adaptadores de contêiner.
-• Funções: O STL inclui classes que sobrecarregam o operador de chamada de função. Instâncias de tais classes são chamadas de objetos de função ou functores. Os funcionais permitem que o funcionamento da função associada seja personalizado com a ajuda de parâmetros a serem passados.
-• Iteradores: Como o nome sugere, os iteradores são usados para trabalhar em uma sequência de valores. Eles são o principal recurso que permite generalidade no STL.
+* Algoritmos: O algoritmo de cabeçalho define uma coleção de funções especialmente projetadas para serem usadas em intervalos de elementos. Eles atuam em contêineres e fornecem meios para várias operações para o conteúdo dos contêineres.
+* Contêineres ou classes de contêiner armazenam objetos e dados. Há no total sete classes de contêineres de “primeira classe” padrão e três classes de adaptadores de contêiner e apenas sete arquivos de cabeçalho que fornecem acesso a esses contêineres ou adaptadores de contêiner.
+* Funções: O STL inclui classes que sobrecarregam o operador de chamada de função. Instâncias de tais classes são chamadas de objetos de função ou functores. Os funcionais permitem que o funcionamento da função associada seja personalizado com a ajuda de parâmetros a serem passados.
+* Iteradores: Como o nome sugere, os iteradores são usados para trabalhar em uma sequência de valores. Eles são o principal recurso que permite generalidade no STL.
 
 Abaixo um exemplo de um tipo de programa hello world que usa a biblioteca STL: uma implementação comum de uma abstração de classe de string chamada string.
 
