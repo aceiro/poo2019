@@ -4,61 +4,82 @@ using namespace std;
 
 class Pokemon{
 private:
-    string nome;
-    string habilidade;
-    string tipo[];
+    string name;
+    string ability;
     int hp;
     int atk;
     int def;
     int spatk;
     int spdef;
     int speed;
+    int evolution;
 public:
     Pokemon();
     Pokemon(string);
     ~Pokemon();
-    void setNome(string);
+    void setStats(string, int, int, int, int, int, int, int);
     string getNome();
 };
 
-class Evolution : Pokemon{
+class PokemonType : Pokemon{
 private:
-    int evolution;
+    string type[];
+    string noEffectAgainst[];
+    string weakAgainst[];
+    string strongAgainst[];
+    string resists[];
+    string weakTo[];
+
 public:
-    Evolution();
-    ~Evolution();
+    PokemonType();
+    ~PokemonType();
+    void setType(string);
 };
 
-Evolution::Evolution(){
+PokemonType::PokemonType(){
 };
 
-Evolution::~Evolution(){
+void PokemonType::setType(string type){
+    for (int i = 0; i < i+1; i++){
+        this->type[i] = type;
+    };
 };
 
+PokemonType::~PokemonType(){
+    
+};
 
 Pokemon::Pokemon(){
     cout << "Classe criada" << endl;
 };
 
 Pokemon::Pokemon(string nome){
-this->nome = nome;
+this->name = nome;
 };
 
 Pokemon::~Pokemon(){
     cout << "Classe destruida" << endl;
 };
 
-void Pokemon::setNome(string nome){
-    this->nome = nome;
+void Pokemon::setStats(string ability, int hp, int atk, int def, int spatk, int spdef, int speed, int evolution){
+    this->ability = ability;
+    this->hp = hp;
+    this->atk = atk;
+    this->def = def;
+    this->spatk = spatk;
+    this->spdef = spdef;
+    this->speed = speed;
+    this->evolution = evolution;
 };
 
 string Pokemon::getNome(){
-    return this->nome;
+    return this->name;
 };
 
 
 
 int main(){ 
-
-Pokemon *pokemon = new Pokemon();
+PokemonType *charmanderFire = new PokemonType();
+    charmanderFire->setStats("Blaze", 39, 52, 43, 60, 50, 64, 1);
+    charmanderFire->setType("Fire");
 }
