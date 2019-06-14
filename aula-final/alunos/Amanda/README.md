@@ -19,7 +19,7 @@ Class Pessoa {
 
 ```
 
-** Q2 )	Crie uma classe em C++ para representar uma Calculadora Aritmética com as seguintes operações – soma, subtração, multiplicação e divisão.**
+**Q2 )	Crie uma classe em C++ para representar uma Calculadora Aritmética com as seguintes operações – soma, subtração, multiplicação e divisão.**
 
 Resp: 
 ```
@@ -118,7 +118,7 @@ int main() {
 }
 ```
 
-** Q3) Explique o conceito de construtores e destrutores em C++ com um exemplo. Nesse caso, use um exemplo diferente dos exercícios 1 e 2.**
+**Q3) Explique o conceito de construtores e destrutores em C++ com um exemplo. Nesse caso, use um exemplo diferente dos exercícios 1 e 2.**
 
 CONSTRUTOR em POO pe um tipo de rotina que é executada durante a criação de um objeto, ou seja, via a instanciação.
 Ex:
