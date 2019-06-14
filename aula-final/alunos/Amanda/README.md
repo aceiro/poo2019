@@ -201,3 +201,59 @@ void f(){
 void f(char){
 ```
 A sobrecarga é qualquer coisa que tenha um parâmetro tem o mesmo nome mas um tem paramento e outro não...isso é sobrecarga.
+
+**Q7 ) Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo método sobrescrito f()
+Class A { public: void f(); };**
+
+```
+class A{
+	private:
+	public:
+		void f();
+};
+	
+class B:A{
+	private:
+	public:
+		void f();
+};
+	
+```
+
+**Q8 ) Crie duas classes em C++ (como a apresentada abaixo)
+Qual f() será chamado? Como se chama essa mecanismo em C++?**
+```
+class A{ public: void f();};
+	class B:{public: void f(); };
+	class C { public: void f(); };
+	void C::f () { B *i = new A(); };
+
+class A{
+	public:
+		void f();
+};
+	
+
+class B: A{
+	public:
+		void f();
+};
+	
+
+class C{
+	public:
+		void f();
+};
+	
+void C::f(){
+	B *i = new A();
+}
+	
+```
+RESPOSTA:  O f() chamado será o da classe C, chama-se sobrescrito.
+
+**Q9 ) Comente o funcionamento do STL - Standard Template Library. Dê um exemplo de uso.**
+
+**Q10 ) Faça um resumo sobre os principais conceitos aprendidos durante o semestre.**
+
+
