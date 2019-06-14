@@ -1,0 +1,272 @@
+/*	LISTA DE PROGRAMA��O ORIENTADO A OBJETOS	*/
+
+/* 
+1 - Cre uma classe em C++ para representar um objeto Pessoa com os seguintes atributos: nome, idade, sexo, CPF e RG */
+
+class Pessoa{
+	private:
+		//atributos
+		string nome;
+		int idade;
+		char sexo;
+		string CPF;
+		string RG;
+	public:
+		Pessoa(); // construtor
+		~Pessoa(); // destrutor
+	
+};
+
+
+
+
+
+/* 
+2 - Crie uma classe em C++ para representar uma Calculadora Aritm�trica com as seguintes oprea��es: soma, subtra��o, multiplica��o e divis�o */
+
+class Calculadora{
+	private:
+		int value;	
+	public:;
+		void soma(double, double);
+		void sub(double, double);
+		void mult(double, double);
+		void div(double, double);
+		void print();
+};
+
+void Calculadora::soma(double a, double b){
+	this.value = a + b;
+	}
+
+void Calculadora::sub(double a, double b){
+	this.value = a - b;
+	}
+
+void Calculadora::mult(double a, double b){
+	this.value = a * b;
+	}
+
+void Calculadora::div(double a, double b){
+	this.value = a / b;
+	}
+
+void Calculadora::print(){
+	cout << "Valor: " << value;
+}
+
+
+
+
+
+/*
+3- Explique o conceito de construtores e destrutores em C++ com um exemplo. Nesse caso, use um exemplo diferente dos exerc�cios 1 e 2 */
+
+// RESPOSTA: Construtor em POO pe um tipo de rotina que � executada durante a cria��o de um objeto, ou seja, via a instancia��o.
+
+			/*Exemplo construtor:*/
+class A{  
+    A();
+};
+
+A::A(){
+	Cout << �Entrou em A�;
+}
+
+int main() {
+    A*a;
+    a = new A();
+}
+
+// Destrutor por outro lado, � uma rotina execut�vel durante a finaliza��o do programa em mem�ria. 
+
+/*Exemplo construtor:*/
+class No{
+	No *ref;
+	No();
+	~No();
+};
+No::No(){
+	ref=new No(); 
+	ref->ref = new No(). 
+    ref->ref->ref = new No(). 
+    ref->ref->ref-> = null. 
+};
+
+No::~No(){
+    Delete ref;
+    //ou
+    Ref= null;
+};
+
+
+
+
+
+/*
+4- Considerando a import�ncia de Programa��o Orientada a Objetos nos dias atuais, comente as principais caracter�sticas desse paradigma de desenvolvimento de software. 
+Em particular, procure destacar suas diferentes. Como sugest�o, tente completar as lacunas a seguir: */
+
+//RESPOSTA:Programa��o orientada a objetos (POO) � um PARADIGMA que visa fornecer o ENCAPSULAMENTO para que classes e MEMBROS possam ser selecionados por meio da instancia��o
+// de classes quando o escopo for PUBLIC.
+
+
+
+
+
+
+/*
+5 - Crie uma classe Pai e uma classe Filha e fa�a a sua representa��o em heran�a usando um diagrama e o respectivo c�digo em C++*/
+
+class Pai{
+    private:
+        String corOlhos;
+	public:
+    	void andar();
+}
+
+class Filha:Pai{ 
+    private:
+        int idade;
+    public:
+        void correr();
+}
+
+
+
+
+
+
+
+/*
+6 - Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo m�todo sobrecarregado f(). 
+class A { public: void f(); };*/
+
+class A{
+	private:
+	public:
+		void f();
+};
+
+class B:A{
+	private:
+	public:
+		void f(int a);
+};
+
+
+
+
+
+
+
+/*
+7 - Crie uma classe em C++ como a apresentada abaixo e em seguida adicione para uma classe filha (B) um novo m�todo sobrescrito f(). 
+class A { public: void f(); };*/
+
+class A{
+	private:
+	public:
+		void f();
+};
+
+class B:A{
+	private:
+	public:
+		void f();
+};
+
+
+
+
+
+
+
+/*
+8 - Crie duas classes em C++ (como apresentado abaixo)
+class A{ public: void f();};
+class B:{public: void f(); };
+class C { public: void f(); };
+void C::f () { B *i = new A(); };
+*/
+
+class A{
+	public:
+		void f();
+};
+
+class B: A{
+	public:
+		void f();
+};
+
+class C{
+	public:
+		void f();
+};
+
+void C::f(){
+	B *i = new A();
+}
+
+//RESPOSTA:  O f() chamdo ser� o da classe C, chama-se sobrescrita.
+
+
+
+
+
+
+
+
+/*
+9- Comente o funcionamento do STL - Standard Template Library. D� um exemplo de uso.
+*/
+
+//RESPOSTA: A STL � uma biblioteca de rotinas da linguagem de programa��o C++, � um conjunto de classes e de algoritmos proposto durante a padroniza��o da linguagem. 
+//As principais classes implementadas na STL s�o:
+//Vetor (vector),
+//Cadeias de caracteres (string),
+//Lista (list),
+//Fila (queue),
+//Pilha (stack),
+// ...
+
+/*EXEMPLO*/
+
+#include <iostream>
+#include <vector> // incluir a biblioteca vector
+using namespace std;
+
+int main(){
+	vector <int> num (5); //declarando um vector int 
+	
+	int tamanho;
+	
+	num.push_back(10); // inserindo elemento no final do vector
+	num.push_back(2);
+	num.push_back(3);
+	
+	tamanho = num.size() // armazenando o tamanho na vari�vel tamanho com o metodo .size
+	
+	cout << "Tamanho do vector: " << tamanho <<endl;
+}
+
+
+
+
+
+
+/*
+10 - Fa�a um resumo sobre os principais conceitos aprendidos durante o semestre*/
+
+/*RESPOSTA: Inicia��o a programa��o orientada a objetos. 
+Aprendemos a trabalhar com classes, realizando abstra��o de objetos, com os conceitos de atributos e encapsulamento.
+Aprendemos sobre heran�a de uma classe para outra, assim como sobre sobrecarga e sobrescrita de fun��es/metodos.
+
+
+
+
+
+
+
+
