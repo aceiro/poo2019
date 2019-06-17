@@ -1,0 +1,29 @@
+Andrew,
+
+Suas respostas foram bem assertivas. Parabéns !!!
+
+Na questão 8 existe uma  classe,
+ class A{ public: void f(); };
+ class B: A { public: void f(); };
+ class C{ public: void f(); };
+ void C::f(){ B *i = new A(); };
+
+ Nenhum método acima será chamado, a menos que exista uma instanciação de um objeto ou chamada de classe. Por exemplo,
+
+ C *c = new C()
+ c->f(); /* nesse caso,  c->f() chama o método f() existente no objeto C. Note que dentro do método f() de C existe uma instanciação mas sem chamada
+            para nenhum método ou membro .*/
+
+ Para chamar  o método f B. Precisa-mos modificar a função f() para ficar como:
+ void C::f(){ 
+      B *i = new A();
+      i->f(); 
+ };
+ i->f(); /* nesse caso, i->f() chama o método do objto de B ou do objeto em A ? Executando-se o código acima - verifica-se que o método chamado
+            é o método f() da classe A pois a instância de classe ocorreu e foi armazeada em um objeto do tipo B. */
+
+
+ Esse mecanismo em C++ é conhecido como "Polimorfismo"
+
+NOTA: 10,0
+

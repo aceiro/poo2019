@@ -1,0 +1,19 @@
+Alisson,
+
+Seguem os principais comentários sobre a sua solução para a Prova P2/Lista
+1. As questões 1,2,3 e 4 foram soluções dadas em sala de aula. E realmente a resposta está correta. Contudo poderia
+para a questões 4 ter apresentado alguma outra explicação. 
+
+2. Na questão 5 tem um erro no seu código na linha -- void andar -- não existe método sem parentes. Nesse caso, o compilador C++
+está achando que "void andar" é uma variável e não um método. Então sua respostas é parcialmente certa.
+
+3. As respostas das questões 6 e 7 estão corretas mas poderia ter incluído alguma saída no método f() e ter mostrado o código fonte em um arquivo separado.
+
+4. A questão 10 você poderia ter explicado um pouco mais, ter feito uma boa pesquisa e ter dado algum exemplo aprendido.
+
+5. No geral, foi bem, mas faltou os exemplos de codigo (.cpp) em todas as questões.
+
+--------------------------
+NOTA P2: 7,0
+
+

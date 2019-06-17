@@ -1,0 +1,23 @@
+Gismar,
+
+Todas as suas respostas foram muito bem claras e satisfatórias. Parabéns !
+
+A Q8 teve uma pequena "pegadinha" e realmente o código não compila. No caso, dessa questão a única forma de um método f() ser executado
+é via a chamada a partir de um objeto. No entanto, isso não foi feito. Para resolver o problema deveria ser modificado a classe
+para incluir 
+
+class B: public A{...}  
+
+e
+
+void C:f(){
+    A *i = new B(); 
+    i->f();
+}
+
+O mecanismo que assegura que uma classe relacionada com a Classe Pai-Filha execute um método membro é o Polimorfismo. Dê uma olhada no exemplo,
+http://www.cplusplus.com/doc/tutorial/polymorphism/
+
+
+NOTA
+10,0 (contando já todos as atividades extras que você entregou no Git inclusive do Stack!)

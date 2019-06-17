@@ -1,0 +1,53 @@
+Amanda,
+
+Segue os principais comentários da sua prova.
+
+1. As respostas das questões 1-3 foram as mesmas vistas em aula. Mas ok, quanto a isso, o que faltou foram os códigos de exemplos funcionando para outras questões.
+
+2. Procure não usar o termo "não limpa a memória" e sim o C++ é uma linguagem que não desaloca a memória automaticamente...
+
+3. Nas respostas tem alguns erros como por exemplo, "Delete" e o correto deve ser "delete"
+
+4. Na questão 6 faltou definir a classe B o correto seria algo como
+class B: A{
+   
+    void f(){ 
+      cout << "Entrou em f()"
+    }
+
+   void f(char c){ /* sobrecarga com o tipo char*/
+      cout << "Entrou em f(char)"
+   }
+}
+
+5. Na questão a classe,
+ class A{ public: void f(); };
+ class B: A { public: void f(); };
+ class C{ public: void f(); };
+ void C::f(){ B *i = new A(); };
+
+ Nenhum método acima será chamado, a menos que exista uma instanciação de um objeto ou chamada de classe. Por exemplo,
+
+ C *c = new C()
+ c->f(); /* nesse caso,  c->f() chama o método f() existente no objeto C. Note que dentro do método f() de C existe uma instanciação mas sem chamada
+            para nenhum método ou membro .*/
+
+ Para chamar  o método f B. Precisa-mos modificar a função f() para ficar como:
+ void C::f(){ 
+      B *i = new A();
+      i->f(); 
+ };
+ i->f(); /* nesse caso, i->f() chama o método do objto de B ou do objeto em A ? Executando-se o código acima - verifica-se que o método chamado
+            é o método f() da classe A pois a instância de classe ocorreu e foi armazeada em um objeto do tipo B. */
+
+
+ Esse mecanismo em C++ é conhecido como "Polimorfismo"
+
+
+6. Faltou alguns códigos das questões no geral.
+
+
+NOTA FINAL: 8,0
+ 
+
+
